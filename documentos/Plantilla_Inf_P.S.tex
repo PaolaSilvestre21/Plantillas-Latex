@@ -1,0 +1,119 @@
+\documentclass[10pt]{article}  
+\usepackage[utf8]{inputenc}
+\usepackage{float}%Podemos usar el especificador [H] en las figuras para que se queden centradas
+\usepackage{sidecap}% Para poner el texto de las imágenes al lado
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+\marginsize{3cm}{3cm}{1cm}{1cm} % Izquierda, derecha, arriba, abajo
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{inputenc}
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{transparent}
+\usepackage{eso-pic}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize USM- Sede Concepcion} %encabezado izquierda
+\author{Nombre ,Apellido }
+\date{Fecha/2023}
+\fancyhead[R]{\footnotesize Departamento de Electrónica e Informática}   % dereecha
+\fancyfoot[R]{\footnotesize P.S.C}  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Ingenieria Informatica}  %izquierda
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+\AddToShipoutPicture{
+	\put(0,0){
+		\parbox[b] [\paperheight]{\paperwidth}{
+			\vfill
+			\centering
+			{\transparent{0.050}\includegraphics[scale=0.25]{/home/Latex/img/foto1.png}}
+			\vfill
+		}
+	}
+}
+
+
+
+\begin{document}
+	\begin{figure}
+		\includegraphics[width=0.25\textwidth]{/home/Latex/img/foto1.png} %/home/user/img/
+		\centering
+	\end{figure}
+	
+	\title{Plantilla -USM}
+	
+	\maketitle
+	
+	\section{Pregunta A} 
+	%\begin{enumerate}[label=(\alph*)]
+	\begin{itemize}
+		
+		\lipsum
+		
+		%\end{enumerate}
+		
+		
+	\end{itemize}
+	\begin{itemize}
+		\item A.2\\
+		\lipsum
+		
+	\end{itemize}
+	\begin{itemize}
+		\item A.3
+		
+		\lipsum
+	\end{itemize}
+	\begin{itemize}
+		\item A.4) \\
+		
+		\par Ejemplo 1:
+		
+		\begin{figure}[h] 
+			
+			\centering
+			\includegraphics{/home/Latex/img/foto1.png} %/home/user/img/
+			
+		\end{figure}
+		
+	\end{itemize}
+	
+	\section{Pregunta B: }
+	
+	\begin{itemize}
+		\lipsum
+		
+	\end{itemize}
+	
+	
+	
+	\begin{itemize}
+		\lipsum
+		
+	\end{itemize}
+	
+	
+	\section{Pregunta C}
+	\begin{itemize}
+		\lipsum
+		
+	\end{itemize}
+	
+	
+	
+	\begin{thebibliography}{2}
+		
+		
+		\url{https://www.}\\
+		\url{https://www.}
+	\end{thebibliography}
+	
+	
+\end{document}	
